@@ -20,6 +20,9 @@
     text-transform: capitalize;
     color: var(--color-primary);
     margin-bottom: 22px;
+    @include tablet {
+      font-size: 30px;
+    }
   }
   &__text {
     font-weight: 400;

@@ -24,6 +24,9 @@
     text-transform: capitalize;
     max-width: 630px;
     margin-bottom: 80px;
+    @include tablet {
+      font-size: 30px;
+    }
   }
   &__cards {
     display: flex;

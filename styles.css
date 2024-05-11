@@ -714,6 +714,11 @@ svg * {
   max-width: 630px;
   margin-bottom: 80px;
 }
+@media (max-width: 1023px) {
+  .serve__title {
+    font-size: 30px;
+  }
+}
 .serve__cards {
   display: flex;
   column-gap: 50px;
@@ -919,6 +924,11 @@ svg * {
   color: var(--color-primary);
   margin-bottom: 22px;
 }
+@media (max-width: 1023px) {
+  .info__title {
+    font-size: 30px;
+  }
+}
 .info__text {
   font-weight: 400;
   line-height: 167%;
@@ -1089,6 +1099,11 @@ svg * {
   font-weight: 700;
   font-size: 40px;
   color: var(--color-primary);
+}
+@media (max-width: 1023px) {
+  .app__title {
+    font-size: 30px;
+  }
 }
 .app__text {
   font-weight: 400;
