@@ -11,6 +11,9 @@
       margin-inline: auto;
       max-width: 400px;
     }
+    @include mobile {
+      min-width: 0;
+    }
   }
 }
 

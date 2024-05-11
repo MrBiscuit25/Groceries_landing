@@ -41,6 +41,9 @@
     background: white;
     border-radius: 12px;
     padding: 55px 34px;
+    @include tablet {
+      padding: 30px 10px;
+    }
 
     &:nth-child(2) {
       position: relative;
@@ -71,6 +74,9 @@
       font-size: 14px;
       line-height: 179%;
       color: var(--color-alternate);
+      @include tablet {
+        max-width: 250px;
+      }
     }
   }
 }

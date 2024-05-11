@@ -23,6 +23,9 @@
   justify-content: center;
   max-width: 470px;
   font-size: 18px;
+  @include mobile {
+    max-width: 300px;
+  }
 
   &__heading {
     line-height: 133%;
@@ -44,6 +47,10 @@
   &__links {
     display: flex;
     column-gap: 30px;
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+    }
   }
 }
 
