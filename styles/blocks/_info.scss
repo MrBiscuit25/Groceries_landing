@@ -1,0 +1,41 @@
+.info {
+  max-width: 400px;
+  font-size: 18px;
+  margin-left: 110px;
+  @include tablet-above {
+    margin-top: 5rem;
+  }
+  &__heading {
+    font-weight: 500;
+    line-height: 133%;
+    color: #03a66b;
+    &-yellow {
+      color: var(--color-section-tag);
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 135%;
+    text-transform: capitalize;
+    color: var(--color-primary);
+    margin-bottom: 22px;
+  }
+  &__text {
+    font-weight: 400;
+    line-height: 167%;
+    color: var(--color-alternate);
+    margin-bottom: 50px;
+  }
+  &__button {
+    min-width: 200px;
+    min-height: 70px;
+    color: white;
+    border: 1px solid transparent;
+    @include hover {
+      background-color: #fff;
+      border: 1px solid var(--color-accent);
+      color: var(--color-accent);
+    }
+  }
+}

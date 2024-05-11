@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grover</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__inner">
+        <a href="" class="header__logo logo">
+          <img
+            src="./images/logo.svg"
+            width="155"
+            height="42"
+            alt="grover"
+            class="logo__image"
+          />
+        </a>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item header__menu-item-active">
+              <a href="" class="header__menu-link">home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">menu</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">service</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">shop</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search search hidden-mobile">
+          <img
+            src="./icons/loupe.svg"
+            width="16"
+            height="16"
+            alt="loupe"
+            class="search__icon"
+          />
+          <input type="text" class="search__control" placeholder="search" />
+          <img
+            src="./icons/cart.svg"
+            width="22"
+            height="20"
+            alt="cart"
+            class="search__cart"
+          />
+        </div>
+        <button
+          class="button__burger-menu burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        >
+          <span class="visually-hidden">open navigation menu</span>
+        </button>
+      </div>
+      <div class="banner">
+        <div class="banner__groceries groceries">
+          <div class="groceries__tag">
+            <p class="groceries__tag-text">more than faster</p>
+            <div class="groceries__tag-image"></div>
+          </div>
+          <div class="groceries__title">
+            groceries delivered in as little as
+            <span class="accent">2 hours</span>
+          </div>
+          <div class="groceries__text">
+            grocen atssures fresh grocery every morning to your family without
+            getting out in this pandemic.
+          </div>
+          <div class="groceries__order">
+            <button class="groceries__order-now">order now</button>
+            <div class="groceries__play_button"></div>
+            <div class="groceries__process">order process</div>
+          </div>
+        </div>
+
+        <div class="banner__fresh fresh">
+          <div class="fresh__card card">
+            <div class="card__image"></div>
+            <div class="card__title">fresh orange</div>
+            <div class="card__price">$44.60</div>
+            <div class="card__subtext">free shipping</div>
+            <div class="card__icon"></div>
+          </div>
+          <div class="fresh__chief">
+            <img
+              src="./images/chief.png"
+              width="323"
+              height="547"
+              alt="chief"
+              class="chief"
+            />
+          </div>
+          <div class="fresh__chief__back">
+            <img
+              src="./images/person_back.png"
+              alt=""
+              class="fresh__chief-back"
+            />
+          </div>
+          <div class="fresh__delivery delivery">
+            <img
+              src="./images/clock.svg"
+              width="34"
+              height="34"
+              alt="clock"
+              class="delivery__image"
+            />
+            <div class="delivery__info">
+              <div class="delivery__info-title">delivery</div>
+              <div class="delivery__info-time">30 min</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="serve">
+      <div class="serve__inner container">
+        <div class="serve__tag">what we serve</div>
+        <div class="serve__title">
+          fruit and vegetable delivered to your home
+        </div>
+        <div class="serve__cards">
+          <div class="serve__card">
+            <img
+              src="./icons/car.svg"
+              width="84"
+              height="42"
+              alt="car"
+              class="serve__card-image"
+            />
+            <div class="serve__card-title">free shipping</div>
+            <div class="serve__card-text">
+              enjoy order in a hand using the fresness of groceries
+            </div>
+          </div>
+          <div class="serve__card">
+            <img
+              src="./icons/money.svg"
+              width="82"
+              height="64"
+              alt="money"
+              class="serve__card-image"
+            />
+            <div class="serve__card-title">15 days returns</div>
+            <div class="serve__card-text">
+              Order in a handy way using the freshness of the groceries.
+            </div>
+          </div>
+          <div class="serve__card">
+            <img
+              src="./icons/message.svg"
+              width="73"
+              height="68"
+              alt="car"
+              class="serve__card-image"
+            />
+            <div class="serve__card-title">Secure checkout</div>
+            <div class="serve__card-text">
+              If you get rotten items - return immediately to us.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose-us container">
+      <div class="choose-us__images">
+        <div class="choose-us__images-inner">
+          <div class="choose-us__circle">
+            <img
+              width="388"
+              height="655"
+              src="./images/person_with_orange.png"
+              alt=""
+              class="choose-us__person-image"
+            />
+          </div>
+          <img
+            class="choose-us__ark"
+            src="./icons/ark.svg"
+            alt=""
+            class="arc"
+          />
+        </div>
+        <div class="choose-us__card goods">
+          <div class="goods__title">Fresh and Juicy</div>
+          <div class="goods__subtext">Red Strawberry</div>
+          <div class="goods__icon"></div>
+          <div class="goods__rating">
+            <img
+              src="./images/star.svg"
+              width="16"
+              height="16"
+              alt="rating"
+              class="goods__rating-image"
+            />
+
+            <span class="goods__rating-score">3.8</span>
+          </div>
+          <div class="goods__footer">
+            <div class="goods__price">$49.66</div>
+            <button class="goods__button">+</button>
+          </div>
+        </div>
+        <div class="choose-us__info info">
+          <div class="info__heading">WHY CHOOSE US</div>
+          <div class="info__title">Find Favorites and Discover New Ones</div>
+          <div class="info__text">
+            At vero eos et accusamus et iusto odio dignissimos ducimus
+            blanditiis praesen voluptatum deleniti.
+          </div>
+          <button class="info__button button">Explore Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-delivery container">
+      <div class="home-delivery-info info">
+        <div class="info__heading info__heading-yellow">HOME DELIVERY</div>
+        <div class="info__title">Sit at Home We Will Take Care Your Order</div>
+        <div class="info__text">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos
+        </div>
+        <button class="info__button button button-hollow">Explore Now</button>
+      </div>
+      <div class="home__chief">
+        <img
+          class="home__chief-image"
+          src="./images/delivery-chief.png"
+          width="360"
+          height="500"
+          alt="chief"
+        />
+        <div class="home__chief-background"></div>
+        <div class="home__card">
+          <div class="home__image"></div>
+          <div class="home__title">Bike Delivery</div>
+          <div class="home__text">
+            Bicycle service ensures that your packages arrive quickly
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="download__inner container">
+        <img
+          src="./images/mobile.png"
+          width="290"
+          height="550"
+          alt="mobile"
+          class="download__mobile-image"
+        />
+        <div class="download__app app">
+          <div class="app__heading">Download our app</div>
+          <div class="app__title">Get the Groceries app order more easily.</div>
+          <div class="app__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.
+          </div>
+          <div class="app__links">
+            <div class="link__app-store link">
+              <img
+                src="./icons/apple.svg"
+                width="43"
+                height="43"
+                alt="apple"
+                class="apple"
+              />
+              App Store
+            </div>
+            <div class="link__play-store link">
+              <img
+                src="./icons/android.svg"
+                width="43"
+                height="43"
+                alt="android"
+                class="android"
+              />
+              Play Store
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo logo">
+          <img
+            src="./images/logo.svg"
+            width="155"
+            height="42"
+            alt=""
+            class="logo__image"
+          />
+          <div class="logo__text">
+            Fast delivery, which is active all over the world, serves with many
+            transportation vehicles.
+          </div>
+        </div>
+        <div class="footer__company footer__column">
+          <div class="footer__column-title">Company</div>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">About Us</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">Blog</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">All Products</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">Locations Map</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services footer__column">
+          <div class="footer__column-title">Services</div>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">Order tracking</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">Wish List</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">My account</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="" class="footer__column-link">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__get-in-touch footer__column">
+          <div class="footer__column-title">Get in Touch</div>
+          <ul class="footer__column-list">
+            <li class="footer__column-item">
+              Subscribe to our weekly Newsletter and receive updates via email.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="line"></div>
+        <div class="copyright__inner">
+          <a href="" class="copyright__rights"
+            >All Rights Reserved @ Dmitrii 2024</a
+          >
+          <a href="" class="copyright__terms">Terms & Conditions</a>
+          <a href="" class="copyright__policy">Privacy & Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="" class="mobile-overlay__link">Home</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="" class="mobile-overlay__link">Menu</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="" class="mobile-overlay__link">Service</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="" class="mobile-overlay__link">Shop</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

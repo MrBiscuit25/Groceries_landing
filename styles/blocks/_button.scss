@@ -1,0 +1,13 @@
+.button {
+  @include reset-button;
+  background-color: var(--color-accent);
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  // &-hollow {
+  //   background-color: white;
+  //   color: var(--color-accent);
+  //   border: 1px solid var(--color-accent);
+  // }
+}

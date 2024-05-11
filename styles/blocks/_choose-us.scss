@@ -1,0 +1,53 @@
+.choose-us {
+  position: relative;
+  margin-bottom: 210px;
+  &__images {
+    display: flex;
+    &-inner {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  &__ark {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    z-index: 100;
+    @include desktop {
+      top: 40%;
+      left: 11%;
+    }
+  }
+  &__circle {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: var(--color-fade);
+    border-radius: 50%;
+    &:after {
+      content: "";
+    }
+  }
+
+  &__person-image {
+    position: absolute;
+    top: -15%;
+    right: 17%;
+    display: flex;
+    margin-inline: auto;
+    clip-path: inset(0% -10% 5% -10% round 0% 0% 50% 50%);
+  }
+
+  &__card {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    z-index: 100;
+    @include tablet {
+      display: none !important;
+    }
+  }
+  &__info {
+  }
+}

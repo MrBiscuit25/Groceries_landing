@@ -1,0 +1,55 @@
+.goods {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px 18px 21px;
+  box-shadow: 0 50px 80px 0 rgba(0, 0, 0, 0.08);
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: 500;
+  min-width: 200px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__subtext {
+    color: var(--color-alternate);
+    font-size: 12px;
+    margin-top: auto;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 91%;
+  }
+  &__icon {
+    min-width: 130px;
+    min-height: 75px;
+    background: no-repeat 50% 9% url("./images/strawberry_lg.svg");
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 125%;
+    margin-top: auto;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__price {
+  }
+  &__button {
+    @include reset-button;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 16px 30px 0 rgba(245, 71, 72, 0.15);
+    background: var(--color-accent);
+    color: white;
+  }
+}

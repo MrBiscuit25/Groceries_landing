@@ -1,0 +1,81 @@
+.home-delivery {
+  display: flex;
+  column-gap: 150px;
+  margin-bottom: 180px;
+  &-info {
+    min-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    @include tablet {
+      margin-inline: auto;
+      max-width: 400px;
+    }
+  }
+}
+
+.home__chief {
+  position: relative;
+  z-index: 100;
+  @include tablet {
+    display: none;
+  }
+  &-background {
+    background: no-repeat center url("./images/delivery-chief_bg.png");
+    min-width: 420px;
+    min-height: 310px;
+    position: absolute;
+    top: 36%;
+    left: -10%;
+    z-index: -1;
+    @include desktop {
+      display: none !important;
+    }
+  }
+  &-image {
+    clip-path: polygon(0 0, 100% 0, 102% 98%, -50% 80%);
+  }
+}
+
+.home {
+  &__card {
+    position: absolute;
+    top: 25%;
+    right: -25%;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    min-width: 160px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 50px 80px 0 rgba(0, 0, 0, 0.08);
+    @include desktop {
+      display: none;
+    }
+  }
+  &__image {
+    min-width: 126px;
+    min-height: 85px;
+    background:
+      no-repeat center url("./images/scooter.svg"),
+      var(--color-fade);
+    margin-bottom: 25px;
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 112%;
+    color: var(--color-primary);
+  }
+  &__text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--color-alternate);
+  }
+}
+
+.info__button {
+  align-self: start;
+}
